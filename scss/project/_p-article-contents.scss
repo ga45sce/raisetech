@@ -1,0 +1,20 @@
+@charset "UTF-8";
+@use '../foundation/mixin';
+
+.p-article-contents__wrap {
+    @include mixin.media-queries(more-sm) {
+        display: grid;
+        grid-template-columns: 375px 375px;
+        justify-content: center;
+    }
+}
+.p-article-contents {
+    position: relative;
+    width: 335px;
+    height: 642px;
+    margin: 20px auto;
+    @include mixin.media-queries(more-md) {
+        width: 357px;
+        height: 681px;
+    }
+}

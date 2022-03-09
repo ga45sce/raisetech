@@ -1,0 +1,36 @@
+@charset "UTF-8";
+
+.p-article-map {
+    position: relative;
+    width: 100%;
+    height: 691px;
+    img {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+    }
+    &__layer1 {
+        width: 100%;
+        height: 691px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: rgba(0,0,0,0.29);
+    }
+    &__layer2 {
+        width: 100%;
+        height: 415px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: rgba(0,0,0,0.6);
+    }
+    &__area {
+        position: absolute;
+        width: 100%;
+        padding: 41px 40px 0px 40px;
+        top: 0;
+        left: 0;
+    }
+
+}

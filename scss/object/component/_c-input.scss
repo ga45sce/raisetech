@@ -1,0 +1,15 @@
+@charset "UTF-8";
+@use "sass:math";
+
+.c-input {
+    &__search {
+        width: 230px;
+        height: 46px;
+        left: 24px;
+        border: 1px solid;
+        border-color: #707070;
+        border-radius: 10px;
+        background-color: #fff;
+        padding: 3px 0 3px 2em; //検索アイコン用の余白
+    }
+}

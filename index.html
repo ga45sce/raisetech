@@ -4,85 +4,127 @@
         <meta charset="UTF-8">
         <title>Hamburger</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=M+PLUS+1p&family=Roboto&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
         <link href="css/style.css" rel="stylesheet"></link>
     </head>
     <body>
-    	<header>
-            <h1>Hamburger</h1>
-            <form>
-                <input type="text">
-                <button>
-                    検索
-                </button>
-            </form>
-            <nav>
-                <ul>
-                    <li><a href="#">バーガー</a></li>
-                    <ul>
-                        <li><a href="#">ハンバーガー</a></li>
-                        <li><a href="#">チーズバーガー</a></li>
-                        <li><a href="#">テリヤキバーガー</a></li>
-                        <li><a href="#">アボカドバーガー</a></li>
-                        <li><a href="#">フィッシュバーガー</a></li>
-                        <li><a href="#">ベーコンバーガー</a></li>
-                        <li><a href="#">チキンバーガー</a></li>
-                    </ul>
-                    <li><a href="#">サイド</a></li>
-                    <ul>
-                        <li><a href="#">ポテト</a></li>
-                        <li><a href="#">サラダ</a></li>
-                        <li><a href="#">ナゲット</a></li>
-                        <li><a href="#">コーン</a></li>
-                    </ul>
-                    <li><a href="#">ドリンク</a></li>
-                    <ul>
-                        <li><a href="#">コーラ</a></li>
-                        <li><a href="#">ファンタ</a></li>
-                        <li><a href="#">オレンジ</a></li>
-                        <li><a href="#">アップル</a></li>
-                        <li><a href="#">紅茶（Ice/Hot）</a></li>
-                        <li><a href="#">コーヒー（Ice/Hot）</a></li>
-                    </ul>
-                </ul>
-            </nav>
+    	<header class="l-header">
+            <div class="p-header__area1">
+                <h1 class="p-header__title">Hamburger</h1>
+                <div class="p-header__search">
+                    <div class="p-header__search2"></div>
+                    <form>
+                        <input type="text" class="c-input__search">
+                        <button class="c-button u-margin__button">
+                            検索
+                        </button>
+                    </form>
+                </div>
+            </div>
+            <div class="p-header__area2">
+                <div>
+                    <button class="c-button-menu js-menu">
+                        <span></span>
+                    </button>
+                    <div>
+                    </div>
+                    <div>
+                        <nav class="p-gmenu">
+                            <ul class="p-gmenu__menu-title">
+                                <li><a href="#" class="c-anker-menu">バーガー</a></li>
+                                <ul class="p-gmenu__menu-subtitle">
+                                    <li><a href="#" class="c-anker-menu">ハンバーガー</a></li>
+                                    <li><a href="#" class="c-anker-menu">チーズバーガー</a></li>
+                                    <li><a href="#" class="c-anker-menu">テリヤキバーガー</a></li>
+                                    <li><a href="#" class="c-anker-menu">アボカドバーガー</a></li>
+                                    <li><a href="#" class="c-anker-menu">フィッシュバーガー</a></li>
+                                    <li><a href="#" class="c-anker-menu">ベーコンバーガー</a></li>
+                                    <li><a href="#" class="c-anker-menu">チキンバーガー</a></li>
+                                </ul>
+                                <li><a href="#" class="c-anker-menu">サイド</a></li>
+                                <ul class="p-gmenu__menu-subtitle">
+                                    <li><a href="#" class="c-anker-menu">ポテト</a></li>
+                                    <li><a href="#" class="c-anker-menu">サラダ</a></li>
+                                    <li><a href="#" class="c-anker-menu">ナゲット</a></li>
+                                    <li><a href="#" class="c-anker-menu">コーン</a></li>
+                                </ul>
+                                <li><a href="#" class="c-anker-menu">ドリンク</a></li>
+                                <ul class="p-gmenu__menu-subtitle">
+                                    <li><a href="#" class="c-anker-menu">コーラ</a></li>
+                                    <li><a href="#" class="c-anker-menu">ファンタ</a></li>
+                                    <li><a href="#" class="c-anker-menu">オレンジ</a></li>
+                                    <li><a href="#" class="c-anker-menu">アップル</a></li>
+                                    <li><a href="#" class="c-anker-menu">紅茶（Ice/Hot）</a></li>
+                                    <li><a href="#" class="c-anker-menu">コーヒー（Ice/Hot）</a></li>
+                                </ul>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
         </header>
         <article>
-            <div>
-                <h2>ダミーサイト</h2>
+            <div class="p-article-top">
+                <img src="./img/phone_main.jpg" alt="メイン画像">
+                <p>ダミーサイト</p>
             </div>
-            <div>
-                <h3>Take Out</h3>
-                <div>
-                    <p>Take OUT</p>
-                    <p>当店のテイクアウトで利用できる商品を掲載しています</p>
+            <div class="p-article-contents__wrap">
+                <div class="p-article-contents">
+                    <img src="./img/phone_take_out.jpg" alt="テイクアウト画像" class="c-main-image">
+                    <p class="c-title-main">Take Out</p>
+                    <div class="p-article-contents-text-area">
+                        <div class="p-article-contents-text">
+                            <p class="c-title-sub">Take OUT</p>
+                            <p class="c-text-sub">当店のテイクアウトで利用できる商品を掲載しています</p>
+                        </div>
+                        <div class="p-article-contents-text">
+                            <p class="c-title-sub">Take OUT</p>
+                            <p class="c-text-sub">当店のテイクアウトで利用できる商品を掲載しています</p>
+                        </div>
+                    </div>
                 </div>
-                <div>
-                    <p>Take OUT</p>
-                    <p>当店のテイクアウトで利用できる商品を掲載しています</p>
+                <div class="p-article-contents">
+                    <img src="./img/phone_eat_in.jpg" alt="イートイン画像" class="c-main-image">
+                    <p class="c-title-main-under">Eat In</p>
+                    <div class="p-article-contents-text-area">
+                        <div class="p-article-contents-text">
+                            <p class="c-title-sub">Take OUT</p>
+                            <p class="c-text-sub">当店のテイクアウトで利用できる商品を掲載しています</p>
+                        </div>
+                        <div class="p-article-contents-text">
+                            <p class="c-title-sub">Take OUT</p>
+                            <p class="c-text-sub">当店のテイクアウトで利用できる商品を掲載しています</p>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div>
-                <h3>Eat In</h3>
-                <div>
-                    <p>Take OUT</p>
-                    <p>当店のテイクアウトで利用できる商品を掲載しています</p>
+            <div class="p-article-map">
+                <img src="./img/phone_map.jpg" alt="マップ画像" class="c-image-map">
+                <div class="p-article-map__layer1"></div>
+                <div class="p-article-map__layer2"></div>
+                <div class="p-article-map__area">
+                    <p class="c-imagae-map__title">見出しが入ります</p>
+                    <p>------</p>
+                    <p class="c-imagae-map-text">テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
                 </div>
-                <div>
-                    <p>Take OUT</p>
-                    <p>当店のテイクアウトで利用できる商品を掲載しています</p>
-                </div>
-            </div>
-            <div>
-                <h4>見出しが入ります</h4>
-                <p>------</p>
-                <p>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
             </div>
         </article>
-        <footer>
-            <a href="#">ショップ情報</a>｜
-            <a href="#">ヒストリー</a>
-            <p><small>Corpyright:RaiseTech</small></p>
+        <footer class="l-footer">
+            <img src="./img/phone_footer.jpg" alt="フッター画像" class="l-footer-image">
+            <div class="l-footer-area">
+                <a href="#" class="l-footer-area-anker">ショップ情報</a>
+                <span class="l-footer-area-anker">｜</span>
+                <a href="#" class="l-footer-area-anker">ヒストリー</a>
+            </div>
+            <div class="l-footer-area2">
+                <p><small>Corpyright:RaiseTech</small></p>
+            </div>
         </footer>
+
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+        <script src="script/script.js"></script>
     </body>
 </html>

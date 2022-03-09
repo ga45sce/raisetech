@@ -1,0 +1,29 @@
+@charset "UTF-8";
+
+.p-gmenu {
+    display: none;
+    /*background-color: #F2EDE9;*/
+    width: 100%;
+    background: linear-gradient(90deg, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0.5) 13%, #F2EDE9 0%, #F2EDE9 100%);
+    
+    &__menu-title {
+        font-size: 24px;
+        font-weight: bold;
+        padding-top: 212px;
+        li {
+            margin-left: 93px;
+        }
+    }
+    &__menu-subtitle {
+        font-size: 20px;
+        margin-top: 50px;
+        li {
+            margin-left: 113px;
+            margin-bottom: 23px;
+        }
+    }
+}
+
+.is-open {
+    width: 100%;
+}

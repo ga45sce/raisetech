@@ -1,19 +1,20 @@
 @charset "UTF-8";
+@use "sass:math";
 
 // ==========================================================================
 // Foundation
 // ==========================================================================
 
-//@import "foundation/_reset";
-//@import "foundation/_base";
+@use 'foundation/mixin';
+@use 'foundation/base';
+
 
 // ==========================================================================
 // Layout
-// ==========================================================================
 
-//@import "layout/_footer";
 @use 'layout/l-header';
 @use 'layout/l-main';
+@use 'layout/l-footer';
 //@import "layout/_sidebar";
 
 // ==========================================================================
@@ -25,6 +26,10 @@
 // -----------------------------------------------------------------
 
 @use 'object/component/c-button';
+@use 'object/component/c-input';
+@use 'object/component/c-anker';
+@use 'object/component/c-title';
+@use 'object/component/c-text';
 
 // -----------------------------------------------------------------
 // Project
@@ -33,7 +38,13 @@
 //@import "object/project/_articles";
 //@import "object/project/_comments";
 //@import "object/project/_gallery";
-//@import "object/project/_profile";
+@use 'project/p-header';
+@use 'project/p-article-top';
+@use 'project/p-article-contents';
+@use 'project/p-article-contents-text';
+@use 'project/p-article-contents-text-area';
+@use 'project/p-article-map';
+@use 'project/p-gmenu';
 
 // -----------------------------------------------------------------
 // Utility
@@ -41,7 +52,7 @@
 
 //@import "object/utility/_align";
 //@import "object/utility/_clearfix";
-//@import "object/utility/_margin";
+@use 'utility/u-margin';
 //@import "object/utility/_position";
 //@import "object/utility/_size";
 //@import "object/utility/_text";

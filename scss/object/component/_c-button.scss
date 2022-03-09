@@ -1,5 +1,87 @@
 @charset "UTF-8";
+@use '../../foundation/mixin';
 
-html {
-    font-size: 62%;
+.c-button {
+    font-size: 16px;
+    font-weight: bold;
+    color: #707070;
+    width: 78px;
+    height: 46px;
+    border: 1px solid;
+    border-radius: 10px;
+    background-image:linear-gradient(#f2ede9,#ded8d3); 
+    
+    @include mixin.media-queries( more-sm ) {
+        color:red;
+    }
+}
+.c-button-menu {
+    font-size: 20px;
+    font-weight: bold;
+    color: #707070;
+    position: absolute;
+    top:14px;
+    right: 16px;
+    font-family: 'Roboto', sans-serif;
+
+    &::after {
+        content: 'Menu';
+        //top: 0;
+        //position: absolute;
+    }
+    &__is-open {
+        &::before,
+        &::after {
+            content: '';
+            width: 40px;
+            height: 4px;
+            top: 10px;
+            right: 0px;
+            background-color: #707070;
+            position: absolute;
+        }
+        &::before {
+            transform: rotate( -45deg );
+        }
+        &::after {
+            transform: rotate( 45deg );
+        }
+        
+
+
+    }
+}
+.c-main-image {
+    object-fit: cover;
+    width: 335px;
+    height: 642px;
+    @include mixin.media-queries( more-md ) {
+        width: 357px;
+        height: 681px;
+    }
+}
+
+.c-image-map {
+    object-fit: cover;
+    width: 375px;
+    height: 691px;
+}
+
+.c-imagae-map-title {
+    /*position: absolute;
+    top: 0;
+    left: 0;*/
+    color: #fff;
+    font-size: 30px;
+    font-weight: bold;
+    //padding: 40px 0px 0px 42px;
+}
+.c-imagae-map-text {
+    /*position: absolute;
+    top: 0;
+    left: 0;*/
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    //padding: 40px 0px 0px 42px;
 }
