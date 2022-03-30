@@ -3,8 +3,7 @@
 
 // ==========================================================================
 // Foundation
-// ==========================================================================
-
+// ===================================================================s=======
 @use 'foundation/mixin';
 @use 'foundation/base';
 
@@ -14,8 +13,8 @@
 
 @use 'layout/l-header';
 @use 'layout/l-main';
+@use 'layout/l-wrapper';
 @use 'layout/l-footer';
-//@import "layout/_sidebar";
 
 // ==========================================================================
 // Object
@@ -34,10 +33,6 @@
 // -----------------------------------------------------------------
 // Project
 // -----------------------------------------------------------------
-
-//@import "object/project/_articles";
-//@import "object/project/_comments";
-//@import "object/project/_gallery";
 @use 'project/p-header';
 @use 'project/p-article-top';
 @use 'project/p-article-contents';
@@ -45,16 +40,11 @@
 @use 'project/p-article-contents-text-area';
 @use 'project/p-article-map';
 @use 'project/p-gmenu';
+@use 'project/p-image-map';
 
 // -----------------------------------------------------------------
 // Utility
 // -----------------------------------------------------------------
 
-//@import "object/utility/_align";
-//@import "object/utility/_clearfix";
 @use 'utility/u-margin';
-//@import "object/utility/_position";
-//@import "object/utility/_size";
-//@import "object/utility/_text";
-
 

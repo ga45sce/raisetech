@@ -1,5 +1,7 @@
 @charset "UTF-8";
 @use "sass:math";
+@use '../../foundation/mixin';
+
 
 .c-input {
     &__search {
@@ -11,5 +13,8 @@
         border-radius: 10px;
         background-color: #fff;
         padding: 3px 0 3px 2em; //検索アイコン用の余白
+        @include mixin.media-queries(more-md) {
+            width: 546px;
+        }
     }
 }
