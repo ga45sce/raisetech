@@ -14,7 +14,7 @@
     }
     @include mixin.media-queries(more-lg) {
         background-image: url("../img/pc_map.jpg");
-        min-height: 649px;
+        min-height: 700px;
     }
     img {
         object-fit: cover;
@@ -47,12 +47,12 @@
     &__area {
         position: relative;
         width: 100%;
-        padding: 41px 40px 0px 40px;
+        padding: 41px 40px 41px 40px;
         top: 0;
         left: 0;
         @include mixin.media-queries(more-lg) {
-            width: 50%;
-            padding: 41px 51px 0px 119px;
+            width: 58%;
+            padding: 41px 51px 41px 119px;
         }
     }
 

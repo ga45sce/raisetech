@@ -8,6 +8,12 @@
             margin-right: 20px;
         }
     }
+    &__article-contents {
+        margin-top: 20px;
+        @include mixin.media-queries(more-md) {
+            margin-top: 0px;
+        }
+    }
     &__article-contents-text {
         margin-bottom: 10px;
         @include mixin.media-queries(more-lg) {

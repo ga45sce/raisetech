@@ -14,7 +14,7 @@
         background-color: #fff;
         padding: 3px 0 3px 2em; //検索アイコン用の余白
         @include mixin.media-queries(more-md) {
-            width: 546px;
+            width: 395px;
         }
     }
 }

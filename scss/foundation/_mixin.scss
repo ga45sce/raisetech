@@ -2,9 +2,10 @@
 
 // キーを「@includeで指定する引数」、値を「min-widthのサイズ」として、Map（連想配列）を作成
 $break-point: (
-  more-sm: 375px,
-  more-md: 834px,
-  more-lg: 1920px
+  //more-sm: 375px,
+  more-md: 600px,
+  //more-lg: 1025px
+  more-lg: 1240px
 );
 
 // メディアクエリを@mixinで定義
