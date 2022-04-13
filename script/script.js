@@ -18,10 +18,19 @@ jQuery( function( $ ) {
     } );
 } );
 
-$(window).resize(function () {                     // Windowサイズが変更された時
+$(window).on('load resize',function () {                     // Windowサイズが変更された時
   var win = $(window).width();
+  var tablet = 600;
   var bp = 1240; // ブレークポイント（px）
-  if (win > bp) {
+  if (win <= tablet) {
+    $(".p-page-send_phone__is-close").show();
+    $(".p-page-send_tablet__is-close").hide();
+  }
+  if (win >= tablet) {
+    $(".p-page-send_phone__is-close").hide();
+    $(".p-page-send_tablet__is-close").show();
+  }
+  if (win >= bp) {
     $(".p-gmenu__backcolor").hide();
     $(".c-button-menu").removeClass("c-button-menu__is-open");
     $(".p-gmenu").removeClass("p-gmenu__is-open");

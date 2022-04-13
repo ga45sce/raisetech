@@ -52,6 +52,7 @@
         font-weight: bold;
         padding-top: 212px;
         height: 2716px;
+        //height: 100%;
         @include mixin.media-queries(more-md) {
             //background: linear-gradient(90deg, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0.5) 467px, #F2EDE9 0%, #F2EDE9 834px);
             //padding-left: 420px;
@@ -62,6 +63,7 @@
         @include mixin.media-queries(more-lg) {
             padding-left: 0px;
             background:#F2EDE9;
+            height: 100%;
         }
         li {
             margin-left: 93px;

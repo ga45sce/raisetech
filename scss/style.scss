@@ -39,10 +39,14 @@
 @use 'project/p-article-map';
 @use 'project/p-gmenu';
 @use 'project/p-image-map';
+@use 'project/p-archive-top';
+@use 'project/p-archive-contents';
+@use 'project/p-page-send';
 
 // -----------------------------------------------------------------
 // Utility
 // -----------------------------------------------------------------
 
 @use 'utility/u-margin';
+@use 'utility/u-font-size';
 

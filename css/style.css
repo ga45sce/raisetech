@@ -306,6 +306,8 @@ li {
 }
 
 .p-article-top {
+  color: #fff;
+  font-weight: bold;
   width: 100%;
   height: 285px;
   display: flex;
@@ -329,26 +331,35 @@ li {
   width: 100%;
   height: 100%;
 }
-.p-article-top p {
-  color: #fff;
+.p-article-top__title {
   padding-left: 25px;
   font-size: 36px;
-  font-weight: bold;
-  align-items: center;
 }
 @media (min-width: 600px) {
-  .p-article-top p {
+  .p-article-top__title {
     padding-left: 86px;
+    font-size: 60px;
+  }
+}
+.p-article-top__subtitle {
+  font-size: 16px;
+  padding-left: 25px;
+}
+@media (min-width: 600px) {
+  .p-article-top__subtitle {
+    padding-top: 12px;
+  }
+}
+@media (min-width: 600px) {
+  .p-article-top__area {
+    display: flex;
+    align-items: center;
   }
 }
 
 .p-article-contents__wrap {
   padding: 5%;
-  /*@include mixin.media-queries(more-lg) {
-      //grid-template-columns: 665px 665px;
-      //grid-template-columns: minmax(665px, 1fr) minmax(665px, 1fr);
-      //justify-content: center;
-  }*/
+  background-color: #FFFDFA;
 }
 @media (min-width: 600px) {
   .p-article-contents__wrap {
@@ -557,6 +568,7 @@ li {
   .p-gmenu__menu-title {
     padding-left: 0px;
     background: #F2EDE9;
+    height: 100%;
   }
 }
 .p-gmenu__menu-title li {
@@ -639,6 +651,149 @@ li {
   }
 }
 
+.p-archive-top {
+  color: #3C2A10;
+  width: 100%;
+  height: 100%;
+  padding: 20px 20px 0px 20px;
+  display: grid;
+  background-color: #FFFDFA;
+}
+@media (min-width: 1240px) {
+  .p-archive-top {
+    padding: 70px 100px 0px 100px;
+  }
+}
+.p-archive-top__subtitle {
+  font-size: 28px;
+  font-weight: bold;
+  padding: 15px 0px 0px 0px;
+}
+.p-archive-top__text {
+  font-size: 16px;
+  padding: 35px 0px 0px 0px;
+}
+
+.p-archive-contents {
+  color: #FFF;
+  width: 100%;
+  height: 100%;
+  padding: 20px 20px 0px 20px;
+  display: grid;
+  background-color: #FFFDFA;
+}
+@media (min-width: 1240px) {
+  .p-archive-contents {
+    padding: 20px 100px 0px 100px;
+  }
+}
+@media (min-width: 600px) {
+  .p-archive-contents__wrap {
+    grid-template-columns: 50% 50%;
+  }
+}
+.p-archive-contents__image {
+  height: 100%;
+  width: 100%;
+}
+.p-archive-contents__text-area {
+  background-color: #3C2B1C;
+  min-height: 355px;
+}
+.p-archive-contents__text-area--2 {
+  min-height: 150px;
+}
+.p-archive-contents__text-title {
+  font-size: 20px;
+  font-weight: bold;
+  padding: 30px 0px 0px 17px;
+}
+@media (min-width: 600px) {
+  .p-archive-contents__text-title {
+    padding-left: 35px;
+  }
+}
+@media (min-width: 1240px) {
+  .p-archive-contents__text-title {
+    font-size: 36px;
+  }
+}
+.p-archive-contents__text-subtitle {
+  font-size: 16px;
+  font-weight: bold;
+  padding: 30px 0px 0px 17px;
+}
+@media (min-width: 600px) {
+  .p-archive-contents__text-subtitle {
+    padding-left: 35px;
+  }
+}
+@media (min-width: 1240px) {
+  .p-archive-contents__text-subtitle {
+    font-size: 24px;
+  }
+}
+.p-archive-contents__text {
+  font-size: 16px;
+  padding: 19px 70px 0px 17px;
+}
+@media (min-width: 600px) {
+  .p-archive-contents__text {
+    padding-left: 35px;
+  }
+}
+.p-archive-contents__button {
+  color: #707070;
+  background-color: #FFF;
+  border-radius: 20px;
+  width: 163px;
+  height: 42px;
+}
+.p-archive-contents__button-area {
+  text-align: center;
+  padding: 40px;
+}
+@media (min-width: 600px) {
+  .p-archive-contents__button-area {
+    padding-left: 45px;
+  }
+}
+
+.p-page-send {
+  display: flex;
+  justify-content: space-between;
+  padding: 60px 20px 30px 20px;
+  background-color: #FFFDFA;
+}
+@media (min-width: 600px) {
+  .p-page-send {
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media (min-width: 1240px) {
+  .p-page-send {
+    padding: 60px 100px 30px 100px;
+  }
+}
+.p-page-send a {
+  color: #707070;
+}
+.p-page-send__text {
+  padding: 7px 12px;
+  margin: 7.5px;
+}
+.p-page-send__textbox {
+  border: solid;
+  border-width: thin;
+  padding: 7px 12px;
+  margin: 7.5px;
+}
+.p-page-send__textbox-wrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .u-margin__button {
   margin-left: 12px;
 }
@@ -662,5 +817,9 @@ li {
   .u-margin__article-contents-text {
     margin-bottom: 20px;
   }
+}
+
+.u-font-size__top {
+  font-size: 16px;
 }
 /*# sourceMappingURL=style.css.map */
