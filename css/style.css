@@ -356,6 +356,14 @@ li {
     align-items: center;
   }
 }
+.p-article-top__archive {
+  background-image: url("../img/archive_top.jpg");
+}
+@media (min-width: 1240px) {
+  .p-article-top__archive {
+    height: 239px;
+  }
+}
 
 .p-article-contents__wrap {
   padding: 5%;
