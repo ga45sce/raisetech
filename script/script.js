@@ -8,12 +8,15 @@ jQuery( function( $ ) {
         $(".p-gmenu").removeClass("p-gmenu__is-open");
         //$(".p-gmenu__backcolor").removeClass("p-gmenu__backcolor__is-open");
         $(".p-gmenu__backcolor").fadeOut(300);
+        $("html").removeClass("p-gmenu__is-scroll_lock");
+
       }
       else {
         $(".c-button-menu").addClass("c-button-menu__is-open");
         $(".p-gmenu") .addClass("p-gmenu__is-open");
         //$(".p-gmenu__backcolor").addClass("p-gmenu__backcolor__is-open");
         $(".p-gmenu__backcolor").fadeIn(300);
+        $("html").addClass("p-gmenu__is-scroll_lock");
       } 
     } );
 } );
