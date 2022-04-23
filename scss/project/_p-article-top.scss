@@ -64,4 +64,10 @@
         left: 0;
         z-index: 1;
     }
+    &__single {
+        background-image: url("../img/cheeseburger.jpg");
+    }
+    &__page {
+        background-image: url("../img/shop.jpg");
+    }
 }

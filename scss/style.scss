@@ -42,6 +42,17 @@
 @use 'project/p-archive-top';
 @use 'project/p-archive-contents';
 @use 'project/p-page-send';
+@use 'project/p-quote-area';
+@use 'project/p-single-top';
+@use 'project/p-image-burger';
+@use 'project/p-burger-contents';
+@use 'project/p-burger-grid';
+@use 'project/p-list-area';
+@use 'project/p-code-area';
+@use 'project/p-table';
+@use 'project/p-button-area';
+@use 'project/p-under-text-area';
+
 
 // -----------------------------------------------------------------
 // Utility
@@ -49,4 +60,5 @@
 
 @use 'utility/u-margin';
 @use 'utility/u-font-size';
+@use 'utility/u-size';
 
